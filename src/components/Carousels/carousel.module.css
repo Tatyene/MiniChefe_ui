@@ -1,0 +1,63 @@
+.caroulseContainer {
+    position: relative;
+    height: 100%;
+}
+
+.slideContainer {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    border-radius: 35px;
+    border: 0px;
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.15);
+}
+
+.slideContent {
+    display: flex;
+    width: 90%;
+    height: 350px;
+}
+
+
+.slideContent>div:first-of-type {
+    display: flex;
+    height: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideContent>div:first-of-type div {
+    width: 50%;
+    padding-top: 20px;
+}
+
+.slideContent>div:first-of-type>div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+.slideNameRoleContainer>h5 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.slideNameRoleContainer>p {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.slideDescription {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}

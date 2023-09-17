@@ -1,0 +1,49 @@
+.main {
+    grid-column: span 12;
+}
+
+.main>div {
+    /* Used just to help in the visualization */
+    /* border: 1px solid #000000; */
+    margin: 30px 0px;
+
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    color: #F48E28;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btnSave {
+    color: white;
+    background-color: #F48E28;
+    border: 1px solid #F48E28;
+}
+
+.btnCancel {
+    color: #F48E28;
+    margin-left: 15px;
+    border: 1px solid #F48E28;
+    background-color: white;
+}
+
+.inputFile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 190;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #EDF2F7;
+}

@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+
+.header>div {
+    display: flex;
+    height: 170px;
+    align-items: center;
+}
+
+.Input {
+    margin: 7px 0px;
+}
+
+.button {
+    color: white;
+    background-color: #F48E28;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.tabContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contentForm {
+    height: 260px;
+}

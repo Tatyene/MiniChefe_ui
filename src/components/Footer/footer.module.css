@@ -1,0 +1,90 @@
+.footer {
+    background: #FAFAFF;
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.footer>div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    flex: 1;
+    /* border: black solid; */
+}
+
+.container {
+    width: 70%;
+}
+
+.footer>div:nth-of-type(1) {
+    flex: 1.5;
+}
+
+.footer .content {
+    color: #B6B6B6;
+}
+
+.contentLinks {
+    color: #B6B6B6;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentLinks a {
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.footer h4 {
+    padding: 57px 0px 65px 0px;
+    height: 56px;
+}
+
+.logo {
+    padding: 20px 0px;
+}
+
+.socials {
+    display: flex;
+    height: 30px;
+}
+
+.socials a {
+    margin: 10px 5px;
+    height: 30px;
+}
+
+.contactUs {
+    display: flex;
+    border-radius: 37px;
+    background: white;
+    color: #B6B6B6;
+    width: 220px;
+    height: 50px;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.contactUs>input {
+    color: #000000;
+    margin-left: 15px;
+    width: 72%;
+    height: 45px;
+}
+
+.contactUs>input::placeholder {
+    color: #B6B6B6;
+}

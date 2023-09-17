@@ -1,0 +1,47 @@
+.cardItem {
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.10);
+    margin: auto;
+}
+
+.cardItemContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 30px;
+}
+
+.buttonContainer {
+    flex-basis: 100%;
+    margin-top: 16px;
+}
+
+.cardRatingContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 45px;
+}
+
+.cardButton {
+    height: 45px;
+    width: 145px;
+    border-radius: 35px;
+    background: var(--Tangerine, #F48E28);
+    color: #FFF;
+    font-size: var(--font-size-small);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.favorite {
+    position: absolute;
+    margin-left: 345px;
+    margin-top: 35px;
+}

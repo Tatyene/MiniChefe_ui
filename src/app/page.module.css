@@ -1,0 +1,117 @@
+.main {
+  grid-column: span 12;
+}
+
+.main section {
+  /* Used just to help in the visualization */
+  /* border: 1px solid #000000; */
+}
+
+.cardSection {
+  margin: 20px 0px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.seeMore {
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 37px;
+  background: var(--Tangerine, #F48E28);
+  display: flex;
+  width: 261px;
+  height: 74px;
+  align-items: center;
+  padding-left: 10px;
+  font-size: var(--font-size-small);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--clr-white);
+}
+
+.categorySection {
+  margin: 120px 0px;
+}
+
+.testimonyGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.testimonyCarousel {
+  width: 100%;
+  height: 100%;
+}
+
+.newsletterSection {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.newsletterSection>img {
+  position: absolute;
+  margin-left: 53px;
+}
+
+.newsletterBackground {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  height: 300px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #000000;
+}
+
+.newsletterContent {
+  text-align: center;
+  color: white;
+  width: 418px;
+  margin-right: 100px;
+}
+
+.newsletterContent>p {
+  margin: 15px 0px;
+  text-align: justify;
+}
+
+.newsletterInput {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  border-radius: 15px;
+  background: var(--White, #FFF);
+}
+
+.newsletterInput>input {
+  color: #000000;
+  margin-left: 15px;
+  width: 60%;
+  height: 45px;
+}
+
+.newsletterInput>input::placeholder {
+  color: #B6B6B6;
+}
+
+.newsletterInput>button {
+  width: 30%;
+  height: 45px;
+  font-weight: 600;
+  border-radius: 15px;
+  background: #F48E28;
+}
