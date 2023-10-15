@@ -1,0 +1,10 @@
+.cardSection {
+    margin: 20px 0px;
+    min-height: 500px
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}

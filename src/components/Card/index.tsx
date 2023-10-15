@@ -25,7 +25,8 @@ const Card = (props: CardProps) => {
                     src={props.imageSRC}
                     alt='search'
                     width={400}
-                    height={333}
+                    height={250}
+                    layout={'responsive'}
                 />
             </div>
             <div className={styles.cardItemContent}>
