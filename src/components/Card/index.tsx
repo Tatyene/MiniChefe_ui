@@ -1,6 +1,8 @@
+"use client"
 import React from 'react';
 import Image from 'next/image'
 import styles from './card.module.css'
+import { useRouter } from 'next/navigation';
 
 interface CardProps {
     id: number;
@@ -11,6 +13,12 @@ interface CardProps {
 }
 
 const Card = (props: CardProps) => {
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push(`/recipe/${props.id}`);
+    };
+
     return (
         <div className={styles.cardItem}>
             <div className="card-item-image">
@@ -41,7 +49,12 @@ const Card = (props: CardProps) => {
                     <p>{props.rating.toString().padEnd(3, '.0')}</p>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.cardButton}>Ver Receita</button>
+                    <button
+                        className={styles.cardButton}
+                        onClick={handleClick}
+                    >
+                        Ver Receita
+                    </button>
                 </div>
             </div>
         </div>
