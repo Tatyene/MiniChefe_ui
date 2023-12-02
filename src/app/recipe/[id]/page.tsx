@@ -65,6 +65,35 @@ const Recipe = ({
         router.push(`/recipe/list`);
     }
 
+    function deleteRecipe() {
+        const requestOptions = {
+            method: 'DELETE'
+        };
+
+        fetch(`http://localhost:8000/recipe/${recipe.id}`, requestOptions)
+            .then(response => response.json())
+            .then(data => {
+                toast({
+                    title: 'Receita excluída com Sucesso!.',
+                    description: "Espero que realmente isso sej o que você queria",
+                    status: 'success',
+                    duration: 9000,
+                    isClosable: true,
+                })
+
+                goList();
+            })
+            .catch(error => {
+                toast({
+                    title: 'Alguma coisa deu errado!.',
+                    description: "tente novamente, pode ser só um probleminha",
+                    status: 'error',
+                    duration: 9000,
+                    isClosable: true,
+                })
+            });
+    }
+
     function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
 
@@ -167,9 +196,14 @@ const Recipe = ({
                         onChange={handleInputChange}
                     />
                 </div>
-                <div>
-                    <Button type="submit" className={styles.btnSave}>Salve</Button>
-                    <Button onClick={goList} className={styles.btnCancel}>Cancel</Button>
+                <div className={styles.options}>
+                    <div>
+                        <Button type="submit" className={styles.btnSave}>Salve</Button>
+                        <Button onClick={goList} className={styles.btnCancel}>Cancel</Button>
+                    </div>
+                    <div>
+                        <Button onClick={deleteRecipe} className={styles.btnCancel}>Excluir</Button>
+                    </div>
                 </div>
             </main>
         </form>

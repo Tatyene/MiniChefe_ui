@@ -47,3 +47,8 @@
     margin-top: 20px;
     background-color: #EDF2F7;
 }
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
